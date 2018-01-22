@@ -1,0 +1,10 @@
+playercontroller.cs
+add function to this script
+
+
+
+void OnTriggerEnter2D(Collider2D other) {
+if (other.tag == "collide") {
+
+}
+}

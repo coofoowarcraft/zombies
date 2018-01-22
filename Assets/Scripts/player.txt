@@ -1,0 +1,13 @@
+characterselector
+
+using UnityEngine;
+using 
+public class CharacterSelector : MonoBehavior {
+  public GameObject player;
+  public Vector3 playerSpawnPosition = new Vector3 (0,1,-7);
+
+  public void OnCharacterSelect(int characterChoice) {
+    GameObject spawnedPlayer = Instantiate(player, playerSpawnPosition, Quaternion.identity) as GameObject;
+    Character selectedCharacter = characters[characterChoice];
+  }
+}

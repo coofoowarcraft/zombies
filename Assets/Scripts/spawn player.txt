@@ -1,0 +1,9 @@
+spawner.cs
+
+public Transform[] spawnLocations;
+public GameObject[] whatToSpawnPrefab;
+puiblic GameObject[] whatToSpawnClone;
+
+void spawnPlayers() {
+spawnClone[0] = Instantiate(spawnPrefab[0], spawnLocations[0].transform.position, Quaternion.Euler(0,0,0)) as GameObject;
+
